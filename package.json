@@ -1,0 +1,16 @@
+{
+  "name": "remarka-web",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "sites/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "preview": "npm run preview --workspaces --if-present",
+    "serve:landing": "npx serve sites/landing",
+    "serve:blog": "npx serve sites/blog",
+    "serve:studio": "npx serve sites/studio"
+  }
+}
