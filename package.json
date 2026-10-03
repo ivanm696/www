@@ -1,0 +1,17 @@
+{
+  "name": "remarka-web",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "sites/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "preview": "npx wrangler preview --assets ./sites/landing",
+    "deploy": "npx wrangler deploy",
+    "serve:landing": "npx serve sites/landing",
+    "serve:blog": "npx serve sites/blog",
+    "serve:studio": "npx serve sites/studio"
+  }
+}
