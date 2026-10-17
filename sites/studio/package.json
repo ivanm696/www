@@ -1,0 +1,10 @@
+{
+  "name": "@remarka/studio",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Studio build step: static site'",
+    "preview": "npx serve ."
+  }
+}
